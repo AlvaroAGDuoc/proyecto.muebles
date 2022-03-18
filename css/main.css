@@ -1,0 +1,16 @@
+.card-border {
+	border: solid 10px white;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+	transform: scale(1.02);
+}
+
+#footer {
+	background: url(../img/fondo.jpg);
+	background-color: rgb(0, 168, 173);
+	background-size: 50px 50px;
+}
