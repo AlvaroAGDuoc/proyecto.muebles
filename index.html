@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<!--BARRA DE NAVEGACION-->
-		<nav class="navbar navbar-expand-sm navbar-dark bg-info">
+		<nav class="navbar navbar-expand-sm navbar-dark color-fondo">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="img/logo.png" alt="" width="200" />
@@ -35,13 +35,41 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-						<li class="nav-item"><a class="nav-link" href="producto_cocina.html">Productos</a></li>
-						<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-						<li class="nav-item">
-							<a class="nav-link" href="login.html">Inicio de sesion</a>
+						<li class="nav-item active">
+							<a class="nav-link active" href="index.html">Inicio</a>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-expanded="false"
+								>Produtos</a
+							>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Cocina</a></li>
+								<li><a class="dropdown-item" href="#">Muebles</a></li>
+								<li><a class="dropdown-item" href="#">Libreros</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li><a class="dropdown-item" href="#">OFERTAS!</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registro.html">Registro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registro.html"
+								><img src="img/carrito.png" alt="" width="24px" height="24px"
+							/></a>
+						</li>
 					</ul>
 				</div>
 			</div>
