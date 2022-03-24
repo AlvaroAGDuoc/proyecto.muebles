@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="css/bootstrap.min.css"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<!--BARRA DE NAVEGACION-->
+		<nav class="navbar navbar-expand-sm navbar-dark color-fondo">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" alt="" width="200" />
+				</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
+								aria-expanded="false"
+								>Produtos</a
+							>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="producto_cocina.html"
+										>Cocina</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="producto_muebles.html"
+										>Muebles</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="producto_libreros.html"
+										>Libreros</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="ofertas.html">OFERTAS!</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registro.html">Registro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="carrito_compras.html"
+								><img src="img/carrito.png" alt="" width="24px" height="24px"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--FOOTER-->
+
+		<div id="footer" class="p-5">
+			<div class="container w-50 pt-5">
+				<div class="row justify-content-md-center">
+					<div class="col text-center">
+						<a href="contacto.html">
+							<button
+								class="btn btn-lg rounded-pill btn-dark w-10 p-3 shadow-sm font-weight-bold"
+							>
+								Contacto
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="row justify-content-md-center py-5">
+					<div class="col text-center font-weight-light">
+						<p>Contactanos</p>
+						<p>Telefono: 9 3345 3442</p>
+						<p>contacto@muebles.cl</p>
+						<p>Horario de atencion:</p>
+						<p>Lunes a Viernes de 09 a 18 horas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--JS BOOTSTRAP-->
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
