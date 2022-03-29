@@ -13,7 +13,7 @@
 		/>
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
-	<body>
+	<body class="carrito">
 		<!--BARRA DE NAVEGACION-->
 		<nav class="navbar navbar-expand-sm navbar-dark color-fondo">
 			<div class="container-fluid">
@@ -89,6 +89,40 @@
 			</div>
 		</nav>
 
+		<div
+			class="alert container position-sticky top-0 remove alert-danger"
+			role="alert"
+		>
+			Producto removido!
+		</div>
+
+		<!--CARRITO-->
+		<br />
+
+		<table class="table table-hover">
+			<thead>
+				<tr class="text-primary">
+					<th scope="col">#</th>
+					<th scope="col">Productos</th>
+					<th scope="col">Precio</th>
+					<th scope="col">Cantidad</th>
+				</tr>
+			</thead>
+			<tbody class="tbody"></tbody>
+		</table>
+		<br /><br />
+
+		<div class="row mx-4">
+			<div class="col">
+				<h3 class="itemCartTotal">Total: 0</h3>
+			</div>
+			<div class="col d-flex justify-content-end">
+				<button class="btn btn-success">Comprar</button>
+			</div>
+		</div>
+
+		<br />
+
 		<!--FOOTER-->
 
 		<div id="footer" class="p-5">
@@ -119,5 +153,7 @@
 
 		<!--JS BOOTSTRAP-->
 		<script src="js/bootstrap.bundle.min.js"></script>
+		<!--NATIVO-->
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

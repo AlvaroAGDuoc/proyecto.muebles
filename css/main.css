@@ -1,3 +1,7 @@
+.alert {
+	z-index: 100;
+}
+
 .card-border {
 	border: solid 10px white;
 	border-radius: 20px;
@@ -18,4 +22,33 @@
 .color-fondo {
 	background: url(../img/fondo2.jpg);
 	background-color: rgb(0, 168, 173);
+}
+
+.carrito {
+	min-height: 80vh;
+	margin: 0 auto;
+	width: 100%;
+}
+.table__productos {
+	display: flex;
+}
+.table__productos > img {
+	width: 9rem;
+	object-fit: contain;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+.table__cantidad > input {
+	width: 40px;
+	border: none;
+	outline: 0;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.hide,
+.remove {
+	display: none;
 }
