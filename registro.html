@@ -13,109 +13,97 @@
 		/>
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
-	<bod<!--BARRA DE NAVEGACION-->
-		<nav class="navbar navbar-expand-sm navbar-dark color-fondo">
+	<body>
+		<!--BARRA DE NAVEGACION-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<!--BARRA NAVBAR-->
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img src="img/logo.png" alt="" width="200" />
-				</a>
+				<!--LOGO DE LA PAGINA-->
+			  <a class="navbar-brand" href="index.html"><img src="img/icono inferior.png" alt="LOGO PAGINA" width="80"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active fs-4" aria-current="page" href="index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
+					<a class="nav-link active dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Productos
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="producto_cocina.html">Cocina</a></li>
+					  <li><a class="dropdown-item" href="producto_muebles.html">Muebles</a></li>
+					  <li><a class="dropdown-item" href="producto_libreros.html">Libreros</a></li>
+					</ul>
+				  </li>
+				  
+				</ul>
+			  </div>
+			  <!--DIRECCION-->	
+			  <div class="container">
+				<div class="row">
+				  <!--PODRIAMOS COLOCAR ALGO AQUI SI ES QUE QUIEREN-->
+				  <div class="col-9 text-white">
+					PODRIAMOS COLOCAR ALGO AQUI SI ES QUE QUIEREN
+				  </div>
+				  <!--COL PARA EL CONTACTO-LOGIN Y REGISTRO-->
+				  <div class="col-3 text-white">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+						  <a class="nav-link active fs-5" aria-current="page" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active fs-5" aria-current="page" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active fs-5" aria-current="page" href="registro.html">Registro</a>
+						</li>
+				  </div>
+				</div>	  
+			</div>
+			</nav>
+			<H1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA MAIN PICHULER</H1>
+		<!--FOOTER-->
+		<footer class="bg-dark text-white py-4">
+			<div class="container">
+				<nav class="row">	
+					<!--LOGO-->		
+					<a href="#" class="col-lg-3 text-reset d-flex align-items-center">
+						<p class=""><img src="img/icono inferior.png" alt="icono inferior" class="mr-2" width="150" > Weston©
+							</p>
+					</a>
+					<!--CONTACTO-->
+					<ul class="col-lg-3 list-unstyled ">
+						<li class="font-weight-bold text-uppercase">Contacto</li>
+						<li><p>Telefono: 9 3345 3442</p></li>
+						<li><p>contacto@muebles.cl</p></li>
+						<li><p>Horario de atencion:</p></li>
+						<li><p>Lunes a Viernes de 09 a 18 horas</p></li>
+					</ul>
+					<!--TERMINOS Y CONDICIONES-->
+					<ul class="col-md-8 col-lg-3 list-unstyled">
+						<li class="font-weight-bold text-uppercase">TODOS LOS DERECHOS RESERVADOS</li>
+						<li><p><a href="#" class="text-reset">Términos y condiciones</a></p></li>
+						<li><p><a href="#" class="text-reset">Política de cookies</a></p></li>
+						<li><p><a href="#" class="text-reset">Política de privacidad</a></p></li>
+					</ul>
+					<!--REDES SOCIALES-->
+					<ul class="col-sm-5 col-lg-3 list-unstyled">
+						<li class="font-weight-bold text-uppercase text-center">Nuestras redes sociales</li>
+						<li class="d-flex justify-content-between">
+							<a href="https://www.youtube.com/c/AnimalPlanetLAT" class="text-reset" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+							<a href="https://www.instagram.com/vivacetavet/" class="text-reset" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.facebook.com/tusmascotas.cl" class="text-reset" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://twitter.com/dv_veterinario?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-reset" target="_blank"><i class="fa-brands fa-twitter"></i></a>
 
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item active">
-							<a class="nav-link active" href="index.html">Inicio</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								data-bs-toggle="dropdown"
-								href="#"
-								role="button"
-								aria-expanded="false"
-								>Produtos</a
-							>
-							<ul class="dropdown-menu">
-								<li>
-									<a class="dropdown-item" href="producto_cocina.html"
-										>Cocina</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item" href="producto_muebles.html"
-										>Muebles</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item" href="producto_libreros.html"
-										>Libreros</a
-									>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a class="dropdown-item" href="ofertas.html">OFERTAS!</a>
-								</li>
-							</ul>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="contacto.html">Contacto</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="login.html">Login</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="registro.html">Registro</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="carrito_compras.html"
-								><img src="img/carrito.png" alt="" width="24px" height="24px"
-							/></a>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
-		</nav>
-
-		<!--FOOTER-->
-
-		<div id="footer" class="p-5">
-			<div class="container w-50 pt-5">
-				<div class="row justify-content-md-center">
-					<div class="col text-center">
-						<a href="contacto.html">
-							<button
-								class="btn btn-lg rounded-pill btn-dark w-10 p-3 shadow-sm font-weight-bold"
-							>
-								Contacto
-							</button>
-						</a>
-					</div>
-				</div>
-
-				<div class="row justify-content-md-center py-5">
-					<div class="col text-center font-weight-light">
-						<p>Contactanos</p>
-						<p>Telefono: 9 3345 3442</p>
-						<p>contacto@muebles.cl</p>
-						<p>Horario de atencion:</p>
-						<p>Lunes a Viernes de 09 a 18 horas</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
+		</footer>
 		<!--JS BOOTSTRAP-->
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
