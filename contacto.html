@@ -14,58 +14,53 @@
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
-		<!--BARRA DE NAVEGACION-->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<!--BARRA NAVBAR-->
+		<!--BARRA NAV-->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
-				<!--LOGO DE LA PAGINA-->
-			  <a class="navbar-brand" href="index.html"><img src="img/icono inferior.png" alt="LOGO PAGINA" width="80"></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<!--LOGO DE LA PAGINA-->>
+			  <a class="navbar-brand" href="index.html"><img src="img/icono inferior.png" alt="logo de la pagina" width="80"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
+			  <div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
 				  <li class="nav-item">
-					<a class="nav-link active fs-4" aria-current="page" href="#">Inicio</a>
+					<a class="nav-link active fs-4" href="index.html">Inicio</a>
 				  </li>
 				  <li class="nav-item dropdown">
 					<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
-					<a class="nav-link active dropdown-toggle fs-4" href="index.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Productos
+					<a class="nav-link active dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Productos
 					</a>
+					<!--ELEMENTOS LISTA DESPLEGABLE-->
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <li><a class="dropdown-item" href="producto_cocina.html">Cocina</a></li>
-					  <li><a class="dropdown-item" href="producto_muebles.html">Muebles</a></li>
-					  <li><a class="dropdown-item" href="producto_libreros.html">Libreros</a></li>
+						<li><a class="dropdown-item" href="producto_cocina.html">Cocina</a></li>
+						<li><a class="dropdown-item" href="producto_muebles.html">Muebles</a></li>
+						<li><a class="dropdown-item" href="producto_libreros.html">Libreros</a></li>
 					</ul>
-				  </li>
-				  
+				</li>  
 				</ul>
+				<form class="d-flex">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link active fs-4" href="carrito_compras.html"><img src="img/carrito de compras.png" alt="logo carrito"></a>
+						  </li>
+						<li class="nav-item">
+							<a class="nav-link active fs-4" href="contacto.html">Contacto</a>
+						</li>
+						  <li class="nav-item">
+							<a class="nav-link active fs-4" href="login.html">Login</a>
+						</li>
+						  <li class="nav-item">
+							<a class="nav-link active fs-4" href="registro.html">Registro</a>
+						</li>
+					</ul>
+				  
+				</form>
 			  </div>
-			  <!--DIRECCION-->	
-			  <div class="container">
-				<div class="row">
-				  <!--PODRIAMOS COLOCAR ALGO AQUI SI ES QUE QUIEREN-->
-				  <div class="col-9 text-white">
-					PODRIAMOS COLOCAR ALGO AQUI SI ES QUE QUIEREN
-				  </div>
-				  <!--COL PARA EL CONTACTO-LOGIN Y REGISTRO-->
-				  <div class="col-3 text-white">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-						  <a class="nav-link active fs-5" aria-current="page" href="contacto.html">Contacto</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active fs-5" aria-current="page" href="login.html">Login</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active fs-5" aria-current="page" href="registro.html">Registro</a>
-						</li>
-				  </div>
-				</div>	  
 			</div>
-			</nav>
-			<H1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA MAIN PICHULER</H1>
+		  </nav>
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
 			<div class="container">
