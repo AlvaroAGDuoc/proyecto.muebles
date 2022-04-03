@@ -3,7 +3,7 @@ const tbody = document.querySelector('.tbody');
 const PATHNAME = window.location.pathname;
 
 let carrito = loadCart();
-if (PATHNAME.includes('/producto_')) {
+if (PATHNAME.includes('/producto_') || PATHNAME.includes('/index.html')) {
 	Clickbutton.forEach((btn) => {
 		btn.addEventListener('click', addToCarritoItem);
 	});
@@ -11,7 +11,6 @@ if (PATHNAME.includes('/producto_')) {
 	renderCarrito();
 	CarritoTotal();
 }
-
 function addToCarritoItem(e) {
 	const button = e.target;
 	const item = button.closest('.card');
