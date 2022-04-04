@@ -18,111 +18,151 @@
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!--LOGO DE LA PAGINA-->>
-			  <a class="navbar-brand" href="index.html"><img src="img/icono inferior.png" alt="logo de la pagina" width="80"></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="mynavbar">
-				<ul class="navbar-nav me-auto">
-				  <li class="nav-item">
-					<a class="nav-link active fs-4" href="index.html">Inicio</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
-					<a class="nav-link active dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink"
-						role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Productos
-					</a>
-					<!--ELEMENTOS LISTA DESPLEGABLE-->
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<li><a class="dropdown-item" href="producto_cocina.html">Cocina</a></li>
-						<li><a class="dropdown-item" href="producto_muebles.html">Muebles</a></li>
-						<li><a class="dropdown-item" href="producto_libreros.html">Libreros</a></li>
-					</ul>
-				</li>  
-				</ul>
-				<form class="d-flex">
+				<a class="navbar-brand" href="index.html"
+					><img src="img/icono inferior.png" alt="logo de la pagina" width="80"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#mynavbar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-4" href="carrito_compras.html"><img src="img/carrito de compras.png" alt="logo carrito"></a>
-						  </li>
-						<li class="nav-item">
-							<a class="nav-link active fs-4" href="contacto.html">Contacto</a>
+							<a class="nav-link active fs-4" href="index.html">Inicio</a>
 						</li>
-						  <li class="nav-item">
-							<a class="nav-link active fs-4" href="login.html">Login</a>
-						</li>
-						  <li class="nav-item">
-							<a class="nav-link active fs-4" href="registro.html">Registro</a>
+						<li class="nav-item dropdown">
+							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
+							<a
+								class="nav-link active dropdown-toggle fs-4"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Productos
+							</a>
+							<!--ELEMENTOS LISTA DESPLEGABLE-->
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<li>
+									<a class="dropdown-item" href="producto_cocina.html"
+										>Cocina</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="producto_muebles.html"
+										>Muebles</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="producto_libreros.html"
+										>Libreros</a
+									>
+								</li>
+							</ul>
 						</li>
 					</ul>
-				  
-				</form>
-			  </div>
+					<form class="d-flex">
+						<ul class="navbar-nav me-auto">
+							<li class="nav-item">
+								<a class="nav-link active fs-4" href="carrito_compras.html"
+									><img src="img/carrito de compras.png" alt="logo carrito"
+								/></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active fs-4" href="contacto.html"
+									>Contacto</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active fs-4" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active fs-4" href="registro.html"
+									>Registro</a
+								>
+							</li>
+						</ul>
+					</form>
+				</div>
 			</div>
-		  </nav>
+		</nav>
 
+		<br /><!-- LOGIN -->
+		<div class="container-fluid">
+			<div class="d-flex justify-content-center">
+				<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+					<h3 class="card-title pt-2 text-center text-primary text-white">
+						Contacto al soporte
+					</h3>
 
+					<div class="card-body">
+						<div class="form-floating mb-3">
+							<input
+								type="nombre"
+								class="form-control"
+								id="floatingInput"
+								placeholder="Nombre"
+							/>
+							<label for="floatingInput">Nombre</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input
+								type="email"
+								class="form-control"
+								id="floatingInput"
+								placeholder="Correo Electronico"
+							/>
+							<label for="floatingInput">Correo Electronico</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input
+								type="mensaje"
+								class="form-control"
+								id="floatingInput"
+								placeholder="Mensaje"
+							/>
+							<label for="floatingInput">Mensaje</label>
+						</div>
+						<br />
+						<div class="d-grid gap-2">
+							<div class="d-flex justify-content-center">
+								<button type="submit" class="btn btn-primary button">
+									Enviar mensaje
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
 
-
-		  <br><!-- LOGIN -->
-		  <div class="container-fluid ">
-			  <div class="d-flex justify-content-center">
-				  <div class="row">
-					  <div class="col-sm-12-md-12-lg-12">
-						  <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
-							  <h3 class="card-title pt-2 text-center text-primary text-white">Contacto al soporte</h3>
-								  
-							  <div class="card-body">
-
-								  <div class="form-floating mb-3">
-									  <input type="nombre" class="form-control" id="floatingInput" placeholder="Nombre">
-									  <label for="floatingInput">Nombre</label>
-								  </div>
-								  <div class="form-floating mb-3">
-									  <input type="email" class="form-control" id="floatingInput" placeholder="Correo Electronico">
-									  <label for="floatingInput">Correo Electronico</label>
-								  </div>
-								  <div class="form-floating mb-3">
-									  <input type="mensaje" class="form-control" id="floatingInput" placeholder="Mensaje">
-									  <label for="floatingInput">Mensaje</label>
-								  </div>
-								  <br>
-								  <div class="d-grid gap-2">
-									  <div class="d-flex justify-content-center">
-										  <a href="index.html">
-											  <button class="btn btn-primary button ">Enviar mensaje				
-											  </button>
-										  </a>
-									  </div>
-									  
-								  </div>
-	  
-							  </div>
-					  </div>
-					  
-					  </div>
-					  
-				  
-				  </div>
-			  </div>
-			  
-			  
-		  </div>
-		  <br>
-		  
-		  
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
 			<div class="container">
-				<nav class="row">	
-					<!--LOGO-->		
+				<nav class="row">
+					<!--LOGO-->
 					<a href="#" class="col-lg-3 text-reset d-flex align-items-center">
-						<p class=""><img src="img/icono inferior.png" alt="icono inferior" class="mr-2" width="150" > Weston©
-							</p>
+						<p class="">
+							<img
+								src="img/icono inferior.png"
+								alt="icono inferior"
+								class="mr-2"
+								width="150"
+							/>
+							Weston©
+						</p>
 					</a>
 					<!--CONTACTO-->
-					<ul class="col-lg-3 list-unstyled ">
+					<ul class="col-lg-3 list-unstyled">
 						<li class="font-weight-bold text-uppercase">Contacto</li>
 						<li><p>Telefono: 9 3345 3442</p></li>
 						<li><p>contacto@muebles.cl</p></li>
@@ -131,29 +171,69 @@
 					</ul>
 					<!--TERMINOS Y CONDICIONES-->
 					<ul class="col-md-8 col-lg-3 list-unstyled">
-						<li class="font-weight-bold text-uppercase">TODOS LOS DERECHOS RESERVADOS</li>
-						<li><p><a href="#" class="text-reset">Términos y condiciones</a></p></li>
-						<li><p><a href="#" class="text-reset">Política de cookies</a></p></li>
-						<li><p><a href="#" class="text-reset">Política de privacidad</a></p></li>
+						<li class="font-weight-bold text-uppercase">
+							TODOS LOS DERECHOS RESERVADOS
+						</li>
+						<li>
+							<p><a href="#" class="text-reset">Términos y condiciones</a></p>
+						</li>
+						<li>
+							<p><a href="#" class="text-reset">Política de cookies</a></p>
+						</li>
+						<li>
+							<p><a href="#" class="text-reset">Política de privacidad</a></p>
+						</li>
 					</ul>
 					<!--REDES SOCIALES-->
 					<ul class="col-sm-5 col-lg-3 list-unstyled">
-						<li class="font-weight-bold text-uppercase text-center">Nuestras redes sociales</li>
+						<li class="font-weight-bold text-uppercase text-center">
+							Nuestras redes sociales
+						</li>
 						<li class="d-flex justify-content-between">
-							<a href="https://www.youtube.com/c/AnimalPlanetLAT" class="text-reset" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-							<a href="https://www.instagram.com/vivacetavet/" class="text-reset" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-							<a href="https://www.facebook.com/tusmascotas.cl" class="text-reset" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-							<a href="https://twitter.com/dv_veterinario?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-reset" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-
+							<a
+								href="https://www.youtube.com/c/AnimalPlanetLAT"
+								class="text-reset"
+								target="_blank"
+								><i class="fa-brands fa-youtube"></i
+							></a>
+							<a
+								href="https://www.instagram.com/vivacetavet/"
+								class="text-reset"
+								target="_blank"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+							<a
+								href="https://www.facebook.com/tusmascotas.cl"
+								class="text-reset"
+								target="_blank"
+								><i class="fa-brands fa-facebook"></i
+							></a>
+							<a
+								href="https://twitter.com/dv_veterinario?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+								class="text-reset"
+								target="_blank"
+								><i class="fa-brands fa-twitter"></i
+							></a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</footer>
 		<!--SEPARATE-->
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-		<script src="https://kit.fontawesome.com/35113f2a50.js" crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/35113f2a50.js"
+			crossorigin="anonymous"
+		></script>
 		<!--NATIVO-->
 		<script src="js/scripts.js"></script>
 	</body>
