@@ -49,8 +49,9 @@
 }
 
 .footer {
-	min-height: calc(100vh - 211px - 58px);
+	min-height: calc(100vh - 450px - 58px);
 	margin: 0 auto;
 	width: 100%;
 	padding: 30px 20px;
+	
 }
