@@ -8,10 +8,10 @@
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
-			href="css/bootstrap.min.css"
+			href="../css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="../css/main.css" />
 	</head>
 
 	<body>
@@ -19,8 +19,11 @@
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!--LOGO DE LA PAGINA-->>
-				<a class="navbar-brand" href="index.html"
-					><img src="img/icono inferior.png" alt="logo de la pagina" width="80"
+				<a class="navbar-brand" href="#"
+					><img
+						src="../img/icono inferior.png"
+						alt="logo de la pagina"
+						width="80"
 				/></a>
 				<button
 					class="navbar-toggler"
@@ -33,7 +36,9 @@
 				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-4" href="index.html">Inicio</a>
+							<a class="nav-link active fs-4" href="index_usuario.html"
+								>Inicio</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
@@ -74,7 +79,7 @@
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
 								<a class="nav-link active fs-4" href="carrito_compras.html"
-									><img src="img/carrito de compras.png" alt="logo carrito"
+									><img src="../img/carrito de compras.png" alt="logo carrito"
 								/></a>
 							</li>
 							<li class="nav-item">
@@ -96,129 +101,74 @@
 			</div>
 		</nav>
 		<!--FIN BARRA NAV-->
-		<br /><!-- REGISTER -->
-		<div class="container">
+
+		<!--PERFIL USUARIO-->
+
+		<br /><!-- LOGIN -->
+		<div class="container-fluid mb-3">
 			<div class="d-flex justify-content-center">
-				<div class="card shadow mb-1 bg-dark rounded" style="width: 25rem">
+				<div class="card shadow mb-1 bg-dark rounded" style="width: 30rem">
 					<h3 class="card-title pt-2 text-center text-primary text-white">
-						Crea una cuenta
+						Cambiar contraseña
 					</h3>
-					<p class="pt-2 text-center text-primary text-white">Es rápido y fácil ツ</p>
+					<p class="text-center text-primary text-white">
+						Introduce la informacion descrita para cambiar tu contraseña.
+					</p>
 					<div class="card-body">
 						<div class="form-floating mb-3">
 							<input
-								type="email"
+								type="password"
 								class="form-control"
-								id="floatingInput"
-								placeholder="Nombre"
+								id="floatingPassword"
+								placeholder="Password"
 							/>
-							<label for="floatingInput">Nombre</label>
+							<label for="floatingPassword">Ingrese su contraseña actual</label>
 						</div>
 						<div class="form-floating mb-3">
 							<input
-								type="email"
+								type="password"
 								class="form-control"
-								id="floatingInput"
-								placeholder="Apellido"
+								id="floatingPassword"
+								placeholder="Password"
 							/>
-							<label for="floatingInput">Apellido(s)</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="Apellido"
-							/>
-							<label for="floatingInput">+56</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="name@example.com"
-							/>
-							<label for="floatingInput">Correo Electrónico</label>
+							<label for="floatingPassword">Ingrese su contraseña nueva</label>
 						</div>
 
-						<div class="form-floating mb-3">
+						<div class="form-floating mb-4">
 							<input
 								type="password"
 								class="form-control"
 								id="floatingPassword"
 								placeholder="Password"
 							/>
-							<label for="floatingPassword">Contraseña</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="password"
-								class="form-control"
-								id="floatingPassword"
-								placeholder="Password"
-							/>
-							<label for="floatingPassword">Confirmar Contraseña</label>
-						</div>
-						<div class="form-floating mb-3">
-							<select
-								class="form-select"
-								id="floatingSelect"
-								aria-label="Floating label select example"
+							<label for="floatingPassword"
+								>Reingrese su contraseña nueva</label
 							>
-								<option selected></option>
-								<option value="1">Región de Arica y Parinacota</option>
-								<option value="2">Región de Tarapacá</option>
-								<option value="3">Región de Antofagasta</option>
-								<option value="4">Región de Atacama</option>
-								<option value="5">Región de Coquimbo</option>
-								<option value="6">Región de Valparaíso</option>
-								<option value="7">Región Metropolitana de Santiago</option>
-								<option value="8">Región del Libertador General Bernardo O’Higgins</option>
-								<option value="9">Región del Maule</option>
-								<option value="10">Región del Ñuble</option>
-								<option value="11">Región del Biobío</option>
-								<option value="12">Región de La Araucanía</option>
-								<option value="13">Región de Los Ríos</option>
-								<option value="14">Región de Los Lagos</option>
-								<option value="15">Región de Aysén del General Carlos Ibáñez del Campo</option>
-							</select>
-							<label for="floatingSelect">Seleccionar Región</label>
 						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="Apellido"
-							/>
-							<label for="floatingInput">Comuna</label>
-						</div>
-						<div class="form-floating mb-1">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="name@example.com"
-							/>
-							<label for="floatingInput">Dirección</label>
-						</div>
-						<br />
-						<div class="d-grid gap-2">
-							<div class="d-flex justify-content-center">
-								<a href="index.html">
-									<button class="btn btn-primary button">Registrarse</button>
-								</a>
+
+						<div class="row px-3">
+							<div class="col-6">
+								<div class="d-grid gap-2">
+									<a href="editar_usuario.html" class="btn btn-primary"
+										>Volver</a
+									>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="d-grid gap-2">
+									<a href="perfil_usuario.html" class="btn btn-danger"
+										>Cambiar contraseña</a
+									>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<br />
 
 		<!--FOOTER-->
-		<footer class="bg-dark text-white py-4">
+		<footer class="bg-dark text-white py-4 footer">
 			<div class="container">
 				<nav class="row">
 					<!--LOGO-->
