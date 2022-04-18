@@ -4,25 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>Olvido su contraseña?</title>
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
-			href="../css/bootstrap.min.css"
+			href="css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<!--BARRA NAV-->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!--LOGO DE LA PAGINA-->>
-				<a class="navbar-brand" href="#"
-					><img
-						src="../img/icono inferior.png"
-						alt="logo de la pagina"
-						width="80"
+				<a class="navbar-brand" href="index.html"
+					><img src="img/icono inferior.png" alt="logo de la pagina" width="80"
 				/></a>
 				<button
 					class="navbar-toggler"
@@ -35,7 +32,7 @@
 				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-4" href="../index.html">Inicio</a>
+							<a class="nav-link active fs-4" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item dropdown">
 							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
@@ -76,7 +73,7 @@
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
 								<a class="nav-link active fs-4" href="carrito_compras.html"
-									><img src="../img/carrito de compras.png" alt="logo carrito"
+									><img src="img/carrito de compras.png" alt="logo carrito"
 								/></a>
 							</li>
 							<li class="nav-item">
@@ -100,59 +97,36 @@
 		<!--FIN BARRA NAV-->
 
 		<br /><!-- LOGIN -->
-		<div class="container-fluid">
-			<div class="d-flex justify-content-center">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
-						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
-							<h3 class="card-title pt-2 text-center text-primary text-white">
-								Iniciar Sesión
-							</h3>
-
-							<div class="card-body">
-								<div class="form-floating mb-3">
-									<input
-										type="email"
-										class="form-control"
-										id="floatingInput"
-										placeholder="name@example.com"
-									/>
-									<label for="floatingInput">Correo Electrónico</label>
-								</div>
-								<div class="form-floating mb-2">
-									<input
-										type="password"
-										class="form-control"
-										id="floatingPassword"
-										placeholder="Password"
-									/>
-									<label for="floatingPassword">Contraseña</label>
-								</div>
-								<p class="text-center">
-									<a href="contraseña_olvidada.html">Olvido su contraseña?</a>
-								</p>
-								<div class="d-grid gap-2 mb-2 py-1">
-									<div class="d-flex justify-content-center">
-										<a href="index.html">
-											<button class="btn btn-primary button">Ingresar</button>
-										</a>
-									</div>
-								</div>
-								<div>
-									<p class="text-white text-center">o</p>
-									<p class="text-white text-center">
-										¿Aún no tienes cuenta?
-										<a href="registro.html">Regístrate</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br />
-
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+        
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 30rem">
+                    <h3 class="card-title pt-2 text-center text-primary text-white">
+                        Recupera tu cuenta
+                    </h3>
+                    <p class="text-center text-primary text-white">Introduce tu correo electrónico para buscar
+                        tu cuenta.</p>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                            <label for="floatingInput">Ingrese su Correo Electrónico</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                            <label for="floatingPassword">Ingrese nuevamente su Correo Electrónico</label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <div class="d-flex justify-content-center">
+                                <a href="index.html">
+                                    <button class="btn btn-primary button">Recuperar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
 		<!--FOOTER-->
 
 		<footer class="bg-dark text-white py-4 footer">

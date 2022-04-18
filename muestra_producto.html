@@ -8,54 +8,46 @@
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
-			href="../css/bootstrap.min.css"
+			href="css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
-		<!--BARRA NAV-->
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<!--BARRA DE NAVEGACION-->
+		<nav class="navbar navbar-expand-sm navbar-dark color-fondo">
 			<div class="container-fluid">
-				<!--LOGO DE LA PAGINA-->>
-				<a class="navbar-brand" href="#"
-					><img
-						src="../img/icono inferior.png"
-						alt="logo de la pagina"
-						width="80"
-				/></a>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" alt="" width="200" />
+				</a>
+
 				<button
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#mynavbar"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="mynavbar">
-					<ul class="navbar-nav me-auto">
-						<li class="nav-item">
-							<a class="nav-link active fs-4" href="index_usuario.html"
-								>Inicio</a
-							>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item dropdown">
-							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
 							<a
-								class="nav-link active dropdown-toggle fs-4"
-								href="#"
-								id="navbarDropdownMenuLink"
-								role="button"
+								class="nav-link dropdown-toggle"
 								data-bs-toggle="dropdown"
+								href="#"
+								role="button"
 								aria-expanded="false"
+								>Produtos</a
 							>
-								Productos
-							</a>
-							<!--ELEMENTOS LISTA DESPLEGABLE-->
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="navbarDropdownMenuLink"
-							>
+							<ul class="dropdown-menu">
 								<li>
 									<a class="dropdown-item" href="producto_cocina.html"
 										>Cocina</a
@@ -71,35 +63,31 @@
 										>Libreros</a
 									>
 								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="ofertas.html">OFERTAS!</a>
+								</li>
 							</ul>
 						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="registro.html">Registro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="carrito_compras.html"
+								><img src="img/carrito.png" alt="" width="24px" height="24px"
+							/></a>
+						</li>
 					</ul>
-					<form class="d-flex">
-						<ul class="navbar-nav me-auto">
-							<li class="nav-item">
-								<a class="nav-link active fs-4" href="carrito_compras.html"
-									><img src="../img/carrito de compras.png" alt="logo carrito"
-								/></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active fs-4" href="contacto.html"
-									>Contacto</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active fs-4" href="login.html">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active fs-4" href="registro.html"
-									>Registro</a
-								>
-							</li>
-						</ul>
-					</form>
 				</div>
 			</div>
 		</nav>
-		<!--FIN BARRA NAV-->
 		<!--FOOTER-->
 
 		<div id="footer" class="p-5">
