@@ -35,9 +35,7 @@
 				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-4" href="admin.html"
-								>Inicio</a
-							>
+							<a class="nav-link active fs-4" href="admin.html">Inicio</a>
 						</li>
 						<li class="nav-item dropdown">
 							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
@@ -94,77 +92,57 @@
 				</div>
 			</div>
 		</nav>
-        <br>
-        <!--CONTENIDO-->
-        
 
-        <div class="row">
-            <div class="col-md-6">
-                <label class="form-label">Nombre del producto</label>
-                <input type="text" class="form-control" placeholder="Cocina Blanca SPENDOR">
-                
-                   
-                    
-              </div>
-        </div>
-        <form class="row g-3 mt-2">
-            <div class="col-md-4">
-                <img src="../img/prueba.jpg" class="card-img-top" alt="..." />
-            </div>
-            <div class="col-md-1"></div>
-            <div class="form-floating col-md-7">
-                <h4>Descripción del producto</h4>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 400px">
-Marca: Puro-Puré 
-Color: Blanco
-                                        
-Es un modelo bastante versátil para casas y departamentos, tiene terminaciones muy finas y de larga duración.
-                    
-                </textarea>
-                
-                
-              </div>
-            
-            <div class="mb-3 col-md-6">
-            <label for="formFile" class="form-label">Cambiar imagen</label>
-            <input class="form-control" type="file" id="formFile" >
-            </div>
+		<!--CONTENIDO-->
 
-            
-			  
-                
-				<div class="col-md-3">
-                    <label for="inputState" class="form-label">Modificar Categoria</label>
-                    <select id="inputState" class="form-select">
-                    <option selected>Seleccionar...</option>
-                    <option value="1">Muebles</option>
-					<option value="2">Libreros</option>
-					<option value="3">Cocina</option>
-                    </select>
-                    
-                  </div>
-				
+		<div class="container">
+			<h1 class="h2 m-4 text-dark text-center">Administracion de Usuarios</h1>
+			<div class="d-grid gap-2 col-6 mx-auto">
+				<a class="text-center" href="agregar_Usuario.html"
+					><button class="btn btn-primary" type="button">
+						Agregar Cliente
+					</button>
+				</a>
+			</div>
+			<br />
+			<div
+			class="tab-pane fade show active container"
+			id="pills-profile"
+			role="tabpanel"
+			aria-labelledby="pills-profile-tab">
 		
-              
-            
-            
-          </form>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label class="form-label">Precio</label>
-                <input type="number" class="form-control" placeholder="40">
-                
-              </div>
-              
-        </div>
-            <div class="col-12 mt-2" >
-                <button type="submit" class="btn btn-primary">Modificar</button>
-                <a href="admin.html"><button type="button" class="btn btn-danger">Deshacer</button></a>
-              </div>
-        
-		<br>
-        <!--FOOTER-->
+			<h2 class="h4 m-4 text-primary">Productos</h2>
+
+			    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <!--LISTA USUARIOS-->
+
+                    <div class="col d-flex justify-content-center mb-4">
+					    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+						    <h5 class="card-title pt-2 text-center text-primary">Miguel Dog</h5>
+						    <img src="../img/Usuarios/Kulerios.png" class="card-img-top" alt="..." />
+						    <div class="card-body">
+							
+							    <h5 class="text-primary">
+								    Tipo: <span class="precio">Cliente</span>
+							    </h5>
+							    <div class="d-grid gap-2">
+								    <a href="Modificar_Usuario.html"><button type="button" class="btn btn-success">Editar</button></a>
+								    <button type="button" class="btn btn-danger">Eliminar</button>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+
+                    
+                    
+                    <!--LISTA USUARIOS_FIN-->
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
 			<div class="container">
 				<nav class="row">
@@ -254,8 +232,5 @@ Es un modelo bastante versátil para casas y departamentos, tiene terminaciones 
 			src="https://kit.fontawesome.com/35113f2a50.js"
 			crossorigin="anonymous"
 		></script>
-	</body>
-</html>
-
 	</body>
 </html>
