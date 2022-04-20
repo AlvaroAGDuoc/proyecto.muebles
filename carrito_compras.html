@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Olvido su contraseña?</title>
+		<title>Document</title>
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
@@ -19,10 +19,7 @@
 			<div class="container-fluid">
 				<!--LOGO DE LA PAGINA-->>
 				<a class="navbar-brand" href="#"
-					><img
-						src="../img/icono inferior.png"
-						alt="logo de la pagina"
-						width="80"
+					><img src="img/LOGO.png" alt="logo de la pagina" width="100"
 				/></a>
 				<button
 					class="navbar-toggler"
@@ -35,12 +32,12 @@
 				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-4" href="../index.html">Inicio</a>
+							<a class="nav-link active fs-6" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item dropdown">
 							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
 							<a
-								class="nav-link active dropdown-toggle fs-4"
+								class="nav-link active dropdown-toggle fs-6"
 								href="#"
 								id="navbarDropdownMenuLink"
 								role="button"
@@ -75,20 +72,20 @@
 					<form class="d-flex">
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
-								<a class="nav-link active fs-4" href="carrito_compras.html"
-									><img src="../img/carrito de compras.png" alt="logo carrito"
+								<a class="nav-link active" href="carrito_compras.html"
+									><img src="img/carrito de compras.png" alt="logo carrito"
 								/></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-4" href="contacto.html"
+								<a class="nav-link active fs-6" href="contacto.html"
 									>Contacto</a
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-4" href="login.html">Login</a>
+								<a class="nav-link active fs-6" href="login.html">Login</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-4" href="registro.html"
+								<a class="nav-link active fs-6" href="registro.html"
 									>Registro</a
 								>
 							</li>
@@ -98,60 +95,51 @@
 			</div>
 		</nav>
 		<!--FIN BARRA NAV-->
+		<div
+			class="alert container position-sticky top-0 remove alert-danger"
+			role="alert"
+		>
+			Producto removido!
+		</div>
 
-		<br /><!-- LOGIN -->
-		<div class="container-fluid">
-			<div class="d-flex justify-content-center">
-				<div class="card shadow mb-1 bg-dark rounded" style="width: 30rem">
-					<h3 class="card-title pt-2 text-center text-primary text-white">
-						Recupera tu cuenta
-					</h3>
-					<p class="text-center text-primary text-white">
-						Introduce tu correo electrónico para buscar tu cuenta.
-					</p>
-					<div class="card-body">
-						<div class="form-floating mb-3">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="name@example.com"
-							/>
-							<label for="floatingInput">Ingrese su Correo Electrónico</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="password"
-								class="form-control"
-								id="floatingPassword"
-								placeholder="Password"
-							/>
-							<label for="floatingPassword"
-								>Ingrese nuevamente su Correo Electrónico</label
-							>
-						</div>
-						<div class="d-grid gap-2">
-							<div class="d-flex justify-content-center">
-								<a href="index.html">
-									<button class="btn btn-primary button">Recuperar</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+		<!--CARRITO-->
+		<br />
+
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr class="text-primary">
+						<th scope="col">#</th>
+						<th scope="col">Productos</th>
+						<th scope="col">Precio</th>
+						<th scope="col">Cantidad</th>
+					</tr>
+				</thead>
+				<tbody class="tbody"></tbody>
+			</table>
+		</div>
+		<br /><br />
+
+		<div class="row mx-4">
+			<div class="col">
+				<h3 class="itemCartTotal">Total: 0</h3>
+			</div>
+			<div class="col d-flex justify-content-end">
+				<button class="btn btn-success">Comprar</button>
 			</div>
 		</div>
-		<br />
-		<!--FOOTER-->
 
-		<footer class="bg-dark text-white py-4 footer">
+		<br />
+
+		<!--FOOTER-->
+		<footer class="bg-dark text-white py-4">
 			<div class="container">
 				<nav class="row">
 					<!--LOGO-->
-					<a href="#" class="col-lg-3 text-reset d-flex align-items-center">
-						<p class="">
+					<a href="#" class="col-lg-3 text-reset text-center">
+						<p>
 							<img
-								src="img/icono inferior.png"
+								src="img/LOGO.png"
 								alt="icono inferior"
 								class="mr-2"
 								width="150"
@@ -160,7 +148,7 @@
 						</p>
 					</a>
 					<!--CONTACTO-->
-					<ul class="col-lg-3 list-unstyled">
+					<ul class="col-lg-3 list-unstyled text-center">
 						<li class="font-weight-bold text-uppercase">Contacto</li>
 						<li><p>Telefono: 9 3345 3442</p></li>
 						<li><p>contacto@muebles.cl</p></li>
@@ -168,12 +156,14 @@
 						<li><p>Lunes a Viernes de 09 a 18 horas</p></li>
 					</ul>
 					<!--TERMINOS Y CONDICIONES-->
-					<ul class="col-md-8 col-lg-3 list-unstyled">
+					<ul class="col-lg-3 list-unstyled text-center">
 						<li class="font-weight-bold text-uppercase">
 							TODOS LOS DERECHOS RESERVADOS
 						</li>
 						<li>
-							<p><a href="#" class="text-reset">Términos y condiciones</a></p>
+							<p>
+								<a href="#" class="text-reset">Términos y condiciones</a>
+							</p>
 						</li>
 						<li>
 							<p><a href="#" class="text-reset">Política de cookies</a></p>
@@ -183,14 +173,14 @@
 						</li>
 					</ul>
 					<!--REDES SOCIALES-->
-					<ul class="col-sm-5 col-lg-3 list-unstyled">
-						<li class="font-weight-bold text-uppercase text-center">
+					<ul class="col-lg-3 list-unstyled text-center">
+						<li class="font-weight-bold text-uppercase">
 							Nuestras redes sociales
 						</li>
-						<li class="d-flex justify-content-between">
+						<li class="justify-content-between text-center">
 							<a
 								href="https://www.youtube.com/c/AnimalPlanetLAT"
-								class="text-reset"
+								class="text-reset text-center"
 								target="_blank"
 								><i class="fa-brands fa-youtube"></i
 							></a>
@@ -217,6 +207,7 @@
 				</nav>
 			</div>
 		</footer>
+
 		<!--SEPARATE-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

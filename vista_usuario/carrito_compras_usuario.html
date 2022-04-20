@@ -13,7 +13,6 @@
 		/>
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
-
 	<body>
 		<!--BARRA NAV-->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -98,76 +97,41 @@
 			</div>
 		</nav>
 		<!--FIN BARRA NAV-->
+		<div
+			class="alert container position-sticky top-0 remove alert-danger"
+			role="alert"
+		>
+			Producto removido!
+		</div>
 
-		<!--PERFIL USUARIO-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<h5 class="text-center">Mi perfil</h5>
-					<img src="img/usuario.jpg" class="img-thumbnail imagen" alt="..." />
-				</div>
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<div class="row px-3">
-						<!--titulo-->
-						<h5>Nombre Completo</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="nombre"
-							placeholder="Marcianeke full tussi"
-						/>
+		<!--CARRITO-->
+		<br />
 
-						<!--titulo-->
-						<h5>Correo Electronico</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="correo"
-							placeholder="marcianeke@gmail.com"
-						/>
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr class="text-primary">
+						<th scope="col">#</th>
+						<th scope="col">Productos</th>
+						<th scope="col">Precio</th>
+						<th scope="col">Cantidad</th>
+					</tr>
+				</thead>
+				<tbody class="tbody"></tbody>
+			</table>
+		</div>
+		<br /><br />
 
-						<!--titulo-->
-						<h5>Dirección</h5>
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="direccion completa"
-							placeholder="Los puente albino 3183, Region Metropolitana de Santiago, Puente Alto"
-						/>
-
-						<!--titulo-->
-						<h5>Contacto</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="contacto"
-							placeholder="+56 9 7273 1722"
-						/>
-
-						<!--titulo-->
-						<h5>Contraseña</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="password"
-							class="form-control mt-1 mb-2"
-							name="contrasena"
-							placeholder="*************"
-						/>
-						<a href="editar_usuario.html" class="btn btn-primary mb-3"
-							>Editar Cuenta</a
-						>
-					</div>
-				</div>
+		<div class="row mx-4">
+			<div class="col">
+				<h3 class="itemCartTotal">Total: 0</h3>
+			</div>
+			<div class="col d-flex justify-content-end">
+				<button class="btn btn-success">Comprar</button>
 			</div>
 		</div>
+
+		<br />
 
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
@@ -245,6 +209,7 @@
 				</nav>
 			</div>
 		</footer>
+		<!--SEPARATE-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

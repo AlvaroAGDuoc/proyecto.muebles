@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Login</title>
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
@@ -13,14 +13,13 @@
 		/>
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
-
 	<body>
 		<!--BARRA NAV-->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container-fluid">
 				<!--LOGO DE LA PAGINA-->>
 				<a class="navbar-brand" href="#"
-					><img src="../img/LOGO.png" alt="logo de la pagina" width="100"
+					><img src="img/LOGO.png" alt="logo de la pagina" width="100"
 				/></a>
 				<button
 					class="navbar-toggler"
@@ -33,9 +32,7 @@
 				<div class="collapse navbar-collapse" id="mynavbar">
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
-							<a class="nav-link active fs-6" href="index_usuario.html"
-								>Inicio</a
-							>
+							<a class="nav-link active fs-6" href="index.html">Inicio</a>
 						</li>
 						<li class="nav-item dropdown">
 							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
@@ -55,17 +52,17 @@
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<li>
-									<a class="dropdown-item" href="producto_cocina_usuario.html"
+									<a class="dropdown-item" href="producto_cocina.html"
 										>Cocina</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="producto_muebles_usuario.html"
+									<a class="dropdown-item" href="producto_muebles.html"
 										>Muebles</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="producto_libreros_usuario.html"
+									<a class="dropdown-item" href="producto_libreros.html"
 										>Libreros</a
 									>
 								</li>
@@ -75,22 +72,22 @@
 					<form class="d-flex">
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
-								<a class="nav-link active" href="carrito_compras_usuario.html"
-									><img src="../img/carrito de compras.png" alt="logo carrito"
+								<a class="nav-link active" href="carrito_compras.html"
+									><img src="img/carrito de compras.png" alt="logo carrito"
 								/></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-6" href="contacto_usuario.html"
+								<a class="nav-link active fs-6" href="contacto.html"
 									>Contacto</a
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-6" href="perfil_usuario.html"
-									>Perfil</a
-								>
+								<a class="nav-link active fs-6" href="login.html">Login</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-6" href="../index.html">Salir</a>
+								<a class="nav-link active fs-6" href="registro.html"
+									>Registro</a
+								>
 							</li>
 						</ul>
 					</form>
@@ -99,75 +96,59 @@
 		</nav>
 		<!--FIN BARRA NAV-->
 
-		<!--PERFIL USUARIO-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<h5 class="text-center">Mi perfil</h5>
-					<img src="img/usuario.jpg" class="img-thumbnail imagen" alt="..." />
-				</div>
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<div class="row px-3">
-						<!--titulo-->
-						<h5>Nombre Completo</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="nombre"
-							placeholder="Marcianeke full tussi"
-						/>
+		<br /><!-- LOGIN -->
+		<div class="container-fluid">
+			<div class="d-flex justify-content-center">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
+							<h3 class="card-title pt-2 text-center text-primary text-white">
+								Iniciar Sesión
+							</h3>
 
-						<!--titulo-->
-						<h5>Correo Electronico</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="correo"
-							placeholder="marcianeke@gmail.com"
-						/>
-
-						<!--titulo-->
-						<h5>Dirección</h5>
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="direccion completa"
-							placeholder="Los puente albino 3183, Region Metropolitana de Santiago, Puente Alto"
-						/>
-
-						<!--titulo-->
-						<h5>Contacto</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="contacto"
-							placeholder="+56 9 7273 1722"
-						/>
-
-						<!--titulo-->
-						<h5>Contraseña</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="password"
-							class="form-control mt-1 mb-2"
-							name="contrasena"
-							placeholder="*************"
-						/>
-						<a href="editar_usuario.html" class="btn btn-primary mb-3"
-							>Editar Cuenta</a
-						>
+							<div class="card-body">
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control"
+										id="floatingInput"
+										placeholder="name@example.com"
+									/>
+									<label for="floatingInput">Correo Electrónico</label>
+								</div>
+								<div class="form-floating mb-2">
+									<input
+										type="password"
+										class="form-control"
+										id="floatingPassword"
+										placeholder="Password"
+									/>
+									<label for="floatingPassword">Contraseña</label>
+								</div>
+								<p class="text-center">
+									<a href="contraseña_olvidada.html">Olvido su contraseña?</a>
+								</p>
+								<div class="d-grid gap-2 mb-2 py-1">
+									<div class="d-flex justify-content-center">
+										<a href="vista_usuario/index_usuario.html">
+											<button class="btn btn-primary button">Ingresar</button>
+										</a>
+									</div>
+								</div>
+								<div>
+									<p class="text-white text-center">o</p>
+									<p class="text-white text-center">
+										¿Aún no tienes cuenta?
+										<a href="registro.html">Regístrate</a>
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br />
 
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
@@ -177,7 +158,7 @@
 					<a href="#" class="col-lg-3 text-reset text-center">
 						<p>
 							<img
-								src="../img/LOGO.png"
+								src="img/LOGO.png"
 								alt="icono inferior"
 								class="mr-2"
 								width="150"
@@ -245,6 +226,8 @@
 				</nav>
 			</div>
 		</footer>
+
+		<!--SEPARATE-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
