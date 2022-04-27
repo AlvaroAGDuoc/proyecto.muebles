@@ -101,124 +101,125 @@
 
 		<!--PERFIL USUARIO-->
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 mt-3 mb-3 text-center">
-					<h5 class="text-center">Mi perfil</h5>
-					<img src="img/usuario.jpg" class="img-thumbnail imagen" alt="..." />
-					<h5>Cambiar imagen de perfil</h5>
-					<input type="file" name="imagen_usuario" accept="image/*" />
-				</div>
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<div class="row px-3">
-						<!--titulo-->
-						<h5>Nombre Completo</h5>
-						<!--texto deshabilitado-->
-						<input
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="nombre"
-							placeholder="Marcianeke full tussi"
-						/>
+			<form>
+				<div class="row">
+					<div class="col-2 mt-3 mb-3">
+					</div>
+					<div class="col-8 mt-3 mb-3">
+						<div class="row">
+							<h3 class="text-center">Mi perfil</h3>
+							<hr>
+							<!--titulo-->
+							<h5>Nombre Completo</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="nombre"
+								placeholder="Marcianeke full tussi"
+							/>
 
-						<!--titulo-->
-						<h5>Correo Electronico</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="correo"
-							placeholder="marcianeke@gmail.com"
-						/>
+							<!--titulo-->
+							<h5>Correo Electronico</h5>
+							<!--texto deshabilitado-->
+							<input
+								disabled
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="correo"
+								placeholder="marcianeke@gmail.com"
+							/>
 
-						<!--titulo-->
-						<h5>Dirección</h5>
-						<input
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="direccion"
-							placeholder="Los puente albino 3183"
-						/>
+							<!--titulo-->
+							<h5>Dirección</h5>
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="direccion"
+								placeholder="Los puente albino 3183"
+							/>
 
-						<!--titulo-->
-						<h5>Contacto</h5>
-						<!--texto deshabilitado-->
-						<input
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="contacto"
-							placeholder="+56 9 7273 1722"
-						/>
+							<!--titulo-->
+							<h5>Contacto</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="contacto"
+								placeholder="+56 9 7273 1722"
+							/>
 
-						<div class="row px-3">
-							<div class="col-6">
-								<h5>Región</h5>
-								<div class="input-group mb-3">
-									<select class="form-select" id="">
-										<option selected>Escoge tu Region</option>
-										<option value="1">Región de Arica y Parinacota</option>
-										<option value="2">Región de Tarapacá</option>
-										<option value="3">Región de Antofagasta</option>
-										<option value="4">Región de Atacama</option>
-										<option value="5">Región de Coquimbo</option>
-										<option value="6">Región de Valparaíso</option>
-										<option value="7">Región Metropolitana de Santiago</option>
-										<option value="8">
-											Región del Libertador General Bernardo O’Higgins
-										</option>
-										<option value="9">Región del Maule</option>
-										<option value="10">Región del Ñuble</option>
-										<option value="11">Región del Biobío</option>
-										<option value="12">Región de La Araucanía</option>
-										<option value="13">Región de Los Ríos</option>
-										<option value="14">Región de Los Lagos</option>
-										<option value="15">
-											Región de Aysén del General Carlos Ibáñez del Campo
-										</option>
-									</select>
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<h5>Región</h5>
+									<div class="input-group mb-3">
+										<select class="form-select" id="">
+											<option selected>Escoge tu Region</option>
+											<option value="1">Región de Arica y Parinacota</option>
+											<option value="2">Región de Tarapacá</option>
+											<option value="3">Región de Antofagasta</option>
+											<option value="4">Región de Atacama</option>
+											<option value="5">Región de Coquimbo</option>
+											<option value="6">Región de Valparaíso</option>
+											<option value="7">Región Metropolitana de Santiago</option>
+											<option value="8">
+												Región del Libertador General Bernardo O’Higgins
+											</option>
+											<option value="9">Región del Maule</option>
+											<option value="10">Región del Ñuble</option>
+											<option value="11">Región del Biobío</option>
+											<option value="12">Región de La Araucanía</option>
+											<option value="13">Región de Los Ríos</option>
+											<option value="14">Región de Los Lagos</option>
+											<option value="15">
+												Región de Aysén del General Carlos Ibáñez del Campo
+											</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col-sm-12 col-md-6 mb-2">
+									<h5>Comuna</h5>
+									<input
+										type="text"
+										id=""
+										class="form-control"
+										placeholder="Ingrese su comuna"
+									/>
 								</div>
 							</div>
 
-							<div class="col-6">
-								<h5>Comuna</h5>
-								<input
-									type="text"
-									id=""
-									class="form-control"
-									placeholder="Ingrese su nueva comuna"
-								/>
-							</div>
-						</div>
-
-						<!--titulo-->
-						<h5>Contraseña</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="password"
-							class="form-control mb-3"
-							name="contrasena"
-							placeholder="*********"
-						/>
-						<div class="row px-3">
-							<div class="col-6">
-								<div class="d-grid gap-2">
-									<a href="perfil_usuario.html" class="btn btn-primary"
-										>Aplicar cambios</a
-									>
+							<!--titulo-->
+							<h5>Contraseña</h5>
+							<!--texto deshabilitado-->
+							<input
+								disabled
+								type="password"
+								class="form-control mb-3"
+								name="contrasena"
+								placeholder="*********"
+							/>
+							<div class="row">
+								<div class="col-sm-12 col-md-6 mb-3">
+									<div class="d-grid gap-2">
+										<a href="perfil_usuario.html" class="btn btn-primary"
+											>Aplicar cambios</a
+										>
+									</div>
 								</div>
-							</div>
-							<div class="col-6">
-								<div class="d-grid gap-2">
-									<a href="cambiar_contrasena.html" class="btn btn-danger"
-										>Cambiar contraseña</a
-									>
+								<div class="col-sm-12 col-md-6">
+									<div class="d-grid gap-2">
+										<a href="cambiar_contrasena.html" class="btn btn-dark	"
+											>Cambiar contraseña</a
+										>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-2"></div>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<!--FOOTER-->
