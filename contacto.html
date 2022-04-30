@@ -104,43 +104,49 @@
 						Contacto al soporte
 					</h3>
 
-					<div class="card-body">
-						<div class="form-floating mb-3">
-							<input
-								type="nombre"
-								class="form-control"
-								id="floatingInput"
-								placeholder="Nombre"
-							/>
-							<label for="floatingInput">Nombre</label>
-						</div>
-						<div class="form-floating mb-3">
-							<input
-								type="email"
-								class="form-control"
-								id="floatingInput"
-								placeholder="Correo Electronico"
-							/>
-							<label for="floatingInput">Correo Electrónico</label>
-						</div>
-						<div class="form-floating">
-							<textarea
-								class="form-control"
-								placeholder="Leave a comment here"
-								id="floatingTextarea2"
-								style="height: 100px"
-							></textarea>
-							<label for="floatingTextarea2">Mensaje</label>
-						</div>
-						<br />
-						<div class="d-grid gap-2">
-							<div class="d-flex justify-content-center">
-								<button type="submit" class="btn btn-primary button">
-									Enviar mensaje
-								</button>
+					<form action="">
+						<div class="card-body">
+							<div class="form-floating mb-3">
+								<input
+									type="nombre"
+									class="form-control"
+									id="nombre_cont"
+									placeholder="Nombre"
+								/>
+								<label for="floatingInput">Nombre</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input
+									type="email"
+									class="form-control"
+									id="email_cont"
+									placeholder="Correo Electronico"
+								/>
+								<label for="floatingInput">Correo Electrónico</label>
+							</div>
+							<div class="form-floating">
+								<textarea
+									class="form-control"
+									placeholder="Leave a comment here"
+									id="mensaje_cont"
+									style="height: 100px"
+								></textarea>
+								<label for="floatingTextarea2">Mensaje</label>
+							</div>
+							<br />
+							<div class="d-grid gap-2">
+								<div class="d-flex justify-content-center">
+									<button
+										type="submit"
+										class="btn btn-primary button"
+										id="msj_contacto"
+									>
+										Enviar mensaje
+									</button>
+								</div>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>

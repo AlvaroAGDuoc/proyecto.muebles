@@ -53,17 +53,17 @@
 								aria-labelledby="navbarDropdownMenuLink"
 							>
 								<li>
-									<a class="dropdown-item" href="producto_cocina_usuario.html"
+									<a class="dropdown-item" href="producto_cocina.html"
 										>Cocina</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="producto_muebles_usuario.html"
+									<a class="dropdown-item" href="producto_muebles.html"
 										>Muebles</a
 									>
 								</li>
 								<li>
-									<a class="dropdown-item" href="producto_libreros_usuario.html"
+									<a class="dropdown-item" href="producto_libreros.html"
 										>Libreros</a
 									>
 								</li>
@@ -78,7 +78,7 @@
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link active fs-6" href="admin.html">Admin</a>
+								<a class="nav-link active fs-6" href="admin_menu.html">Admin</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active fs-6" href="../index.html">Salir</a>
@@ -92,76 +92,72 @@
 
 		<!--PERFIL USUARIO-->
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<h5 class="text-center">Perfil Miguel Dog</h5>
-					<img
-						src="../img/Usuarios/Kulerios.png"
-						class="img-thumbnail imagen"
-						alt="..."
-					/>
-				</div>
-				<div class="col-md-6 col-sm-12 mt-3 mb-3">
-					<div class="row px-3">
-						<!--titulo-->
-						<h5>Nombre Completo</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="nombre"
-							placeholder="Miguel Dog"
+			<form action="">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 mt-3 mb-3">
+						<h5 class="text-center">Perfil Miguel Dog</h5>
+						<img
+							src="../img/Usuarios/Kulerios.png"
+							class="img-thumbnail imagen"
+							alt="..."
 						/>
+					</div>
+					<div class="col-md-6 col-sm-12 mt-3 mb-3">
+						<div class="row px-3">
+							<!--titulo-->
+							<h5>Nombre Completo</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="nombre"
+								placeholder="Miguel Dog"
+								id="nombre_edit"
+							/>
 
-						<!--titulo-->
-						<h5>Correo Electronico</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="correo"
-							placeholder="RivenLover@gmail.com"
-						/>
+							<!--titulo-->
+							<h5>Correo Electronico</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="email"
+								class="form-control mt-1 mb-2"
+								name="correo"
+								placeholder="RivenLover@gmail.com"
+								id="email_edit"
+							/>
 
-						<!--titulo-->
-						<h5>Dirección</h5>
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="direccion completa"
-							placeholder="Los tres tristes tigres #5893, Region Metropolitana de Santiago, Las Condes"
-						/>
+							<!--titulo-->
+							<h5>Dirección</h5>
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="direccion completa"
+								placeholder="Los tres tristes tigres #5893, Region Metropolitana de Santiago, Las Condes"
+								id="dir_edit"
+							/>
 
-						<!--titulo-->
-						<h5>Contacto</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="text"
-							class="form-control mt-1 mb-2"
-							name="contacto"
-							placeholder="+56 9 7216 7535"
-						/>
+							<!--titulo-->
+							<h5>Contacto</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="contacto"
+								placeholder="+56 9 7216 7535"
+								id="num_edit"
+							/>
 
-						<!--titulo-->
-						<h5>Contraseña</h5>
-						<!--texto deshabilitado-->
-						<input
-							disabled
-							type="password"
-							class="form-control mt-1 mb-2"
-							name="contrasena"
-							placeholder="***********"
-						/>
-						<a href="Lista_Usuarios.html" class="btn btn-primary mb-3"
-							>Confirmar Cambios</a
-						>
+							<button
+								type="submit"
+								class="btn btn-primary button"
+								id="conf_edit"
+							>
+								Confirmar cambios
+							</button>
+						</div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 
 		<!--FOOTER-->
