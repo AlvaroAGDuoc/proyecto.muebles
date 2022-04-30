@@ -96,61 +96,47 @@
 		</nav>
 		<!--FIN BARRA NAV-->
 
-		<br /><!-- LOGIN -->
-		<div class="container-fluid">
-			<div class="d-flex justify-content-center">
-				<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem">
-					<h3 class="card-title pt-2 text-center text-primary text-white">
-						Contacto al soporte
-					</h3>
+		<div class="container">
+			<form method="post" id="form-cont">
+				<div class="row">
+					<div class="col-2 mt-3 mb-3"></div>
+					<div class="col-8 mt-3 mb-3">
+						<div class="row">
+							<h3 class="text-center">Contactanos</h3>
+							<hr />
+							<!--titulo-->
+							<h5>Nombre</h5>
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="correo"
+								placeholder="ej. Juan Perez"
+							/>
+							<h5>Email</h5>
+							<input
+								type="email"
+								class="form-control mt-1 mb-2"
+								name="correo"
+								placeholder="example@example.com"
+							/>
 
-					<form action="">
-						<div class="card-body">
-							<div class="form-floating mb-3">
-								<input
-									type="nombre"
-									class="form-control"
-									id="nombre_cont"
-									placeholder="Nombre"
-								/>
-								<label for="floatingInput">Nombre</label>
-							</div>
-							<div class="form-floating mb-3">
-								<input
-									type="email"
-									class="form-control"
-									id="email_cont"
-									placeholder="Correo Electronico"
-								/>
-								<label for="floatingInput">Correo Electrónico</label>
-							</div>
-							<div class="form-floating">
-								<textarea
-									class="form-control"
-									placeholder="Leave a comment here"
-									id="mensaje_cont"
-									style="height: 100px"
-								></textarea>
-								<label for="floatingTextarea2">Mensaje</label>
-							</div>
-							<br />
-							<div class="d-grid gap-2">
-								<div class="d-flex justify-content-center">
-									<button
-										type="submit"
-										class="btn btn-primary button"
-										id="msj_contacto"
-									>
-										Enviar mensaje
-									</button>
-								</div>
-							</div>
+							<h5>Mensaje</h5>
+							<textarea
+								class="form-control mt-1 mb-3"
+								name="Mensaje"
+								placeholder="Escriba un mensaje..."
+								rows="8"
+							></textarea>
+
+							<button type="submit" class="btn btn-dark btn-lg">
+								Enviar mensaje
+							</button>
 						</div>
-					</form>
+					</div>
+					<div class="col-2"></div>
 				</div>
-			</div>
+			</form>
 		</div>
-		<br />
 
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">

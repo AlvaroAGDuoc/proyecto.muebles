@@ -71,17 +71,41 @@
 								</li>
 							</ul>
 						</li>
+						<li class="nav-item dropdown">
+							<!--BOTON PARA DESPLEGAR TIPOS DE PRODUCTOS-->
+							<a
+								class="nav-link active dropdown-toggle fs-6"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Admin
+							</a>
+							<!--ELEMENTOS LISTA DESPLEGABLE-->
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<li>
+									<a class="dropdown-item" href="lista_usuarios.html"
+										>Usuarios</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="admin.html">Productos</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">Ventas</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 					<form class="d-flex">
 						<ul class="navbar-nav me-auto">
-							<li class="nav-item">
-								<a class="nav-link active fs-6" href="admin_contacto.html"
-									>Contacto</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active fs-6" href="admin_menu.html">Admin</a>
-							</li>
+
+
 							<li class="nav-item">
 								<a class="nav-link active fs-6" href="../index.html">Salir</a>
 							</li>
@@ -98,7 +122,7 @@
 			<h1 class="h2 m-4 text-dark text-center">Administracion de productos</h1>
 			<div class="d-grid gap-2 col-6 mx-auto">
 				<a class="text-center" href="agregar_producto.html"
-					><button class="btn btn-primary" type="button">
+					><button class="btn btn-dark" type="button">
 						Agregar producto
 					</button>
 				</a>

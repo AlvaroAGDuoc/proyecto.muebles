@@ -96,9 +96,84 @@
 			</div>
 		</nav>
 		<!--FIN BARRA NAV-->
-		<br /><!-- REGISTER -->
+		<!-- REGISTER -->
+		<div class="container">
+			<form method="post" id="form-reg">
+				<div class="row">
+					<div class="col-2 mt-3 mb-3"></div>
+					<div class="col-8 mt-3 mb-3">
+						<div class="row">
+							<h3 class="text-center">Registro</h3>
+							<hr />
+							<h5>Nombre Completo</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="nombre"
+								placeholder="ej. Juan Perez"
+							/>
 
-		<br />
+							<h5>Correo Electronico</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="email"
+								class="form-control mt-1 mb-2"
+								name="correo"
+								placeholder="example@example.com"
+							/>
+
+							<h5>Dirección</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="text"
+								class="form-control mt-1 mb-2"
+								name="dir"
+								placeholder="ej. Pasaje uchiha 123"
+							/>
+
+							<h5>Comuna</h5>
+							<input
+								type="text"
+								id="comuna"
+								class="form-control"
+								placeholder="Ingrese su comuna"
+							/>
+							<h5>Número celular</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="number"
+								class="form-control mt-1 mb-2"
+								name="celu"
+								placeholder="ej. 9 1111 2222"
+							/>
+
+							<!--titulo-->
+							<h5>Contraseña</h5>
+							<!--texto deshabilitado-->
+							<input
+								type="password"
+								class="form-control mb-3"
+								name="contrasena"
+								placeholder="*********"
+							/>
+
+							<div class="d-grid gap-2">
+								<button type="submit" class="btn btn-dark mb-3">
+									Registrarse
+								</button>
+							</div>
+
+							<p class="text-center">¿Ya tienes una cuenta?</p>
+							<a href="login.html" class="text-center text-reset"
+								>Inicia sesion aqui</a
+							>
+						</div>
+					</div>
+					<div class="col-2"></div>
+				</div>
+			</form>
+		</div>
 
 		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
