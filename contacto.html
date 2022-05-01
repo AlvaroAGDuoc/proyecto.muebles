@@ -11,7 +11,8 @@
 			href="../css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<!--BARRA NAV-->
@@ -109,7 +110,8 @@
 							<input
 								type="text"
 								class="form-control mt-1 mb-2"
-								name="correo"
+								name="nombre"
+								id="nombre_cont"
 								placeholder="ej. Juan Perez"
 							/>
 							<h5>Email</h5>
@@ -117,6 +119,7 @@
 								type="email"
 								class="form-control mt-1 mb-2"
 								name="correo"
+								id="correo_cont"
 								placeholder="example@example.com"
 							/>
 
@@ -124,6 +127,7 @@
 							<textarea
 								class="form-control mt-1 mb-3"
 								name="Mensaje"
+								id="msj_cont"
 								placeholder="Escriba un mensaje..."
 								rows="8"
 							></textarea>
@@ -131,6 +135,7 @@
 							<button type="submit" class="btn btn-dark btn-lg">
 								Enviar mensaje
 							</button>
+							<p id="warnings" class="text-center"></p>
 						</div>
 					</div>
 					<div class="col-2"></div>
@@ -231,6 +236,6 @@
 			crossorigin="anonymous"
 		></script>
 		<!--NATIVO-->
-		<script src="js/scripts.js"></script>
+		<script src="js/validaciones.js"></script>
 	</body>
 </html>

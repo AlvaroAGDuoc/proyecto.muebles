@@ -4,14 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Registro</title>
 		<!-- BOOTSTRAP -->
 		<link
 			rel="stylesheet"
 			href="../css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -111,6 +112,7 @@
 								type="text"
 								class="form-control mt-1 mb-2"
 								name="nombre"
+								id="nombre_reg"
 								placeholder="ej. Juan Perez"
 							/>
 
@@ -120,6 +122,7 @@
 								type="email"
 								class="form-control mt-1 mb-2"
 								name="correo"
+								id="email_reg"
 								placeholder="example@example.com"
 							/>
 
@@ -129,6 +132,7 @@
 								type="text"
 								class="form-control mt-1 mb-2"
 								name="dir"
+								id="dir_reg"
 								placeholder="ej. Pasaje uchiha 123"
 							/>
 
@@ -145,6 +149,7 @@
 								type="number"
 								class="form-control mt-1 mb-2"
 								name="celu"
+								id="celular"
 								placeholder="ej. 9 1111 2222"
 							/>
 
@@ -155,14 +160,17 @@
 								type="password"
 								class="form-control mb-3"
 								name="contrasena"
+								id="pass_reg"
 								placeholder="*********"
 							/>
 
 							<div class="d-grid gap-2">
-								<button type="submit" class="btn btn-dark mb-3">
+								<button type="submit" class="btn btn-dark mb-3" id="btn_reg">
 									Registrarse
-								</button>
+								
 							</div>
+							
+							<p id="warnings" class="text-center "></p>
 
 							<p class="text-center">¿Ya tienes una cuenta?</p>
 							<a href="login.html" class="text-center text-reset"

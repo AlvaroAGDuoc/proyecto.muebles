@@ -3,6 +3,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
+	background-color: #fafff0;
 }
 
 .alert {
@@ -58,4 +59,24 @@ footer {
 
 .imagen {
 	border-radius: 50%;
+}
+
+.texto-principal {
+	color: #e0a901;
+	font-family: 'Domine', serif;
+	font-weight: bold;
+}
+
+.titulo-producto {
+	color: #e0a901;
+}
+
+#warnings {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: #c50000;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-weight: bold;
 }

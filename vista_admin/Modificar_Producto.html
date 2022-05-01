@@ -6,8 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Muebles</title>
 
-		<!--CSS-->
-		<link rel="stylesheet" href="css/main.css" />
 		<!--BOOTSTRAP-->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -15,6 +13,9 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+		<!--CSS-->
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<!--BARRA NAV-->
@@ -104,8 +105,6 @@
 					</ul>
 					<form class="d-flex">
 						<ul class="navbar-nav me-auto">
-
-
 							<li class="nav-item">
 								<a class="nav-link active fs-6" href="../index.html">Salir</a>
 							</li>
@@ -115,77 +114,52 @@
 			</div>
 		</nav>
 		<!--FIN BARRA NAV-->
-        <br>
-        <!--CONTENIDO-->
-        
+		<br />
+		<!--CONTENIDO-->
 
-        <div class="row">
-            <div class="col-md-6">
-                <label class="form-label">Nombre del producto</label>
-                <input type="text" class="form-control" placeholder="Cocina Blanca SPENDOR">
-                
-                   
-                    
-              </div>
-        </div>
-        <form class="row g-3 mt-2">
-            <div class="col-md-4">
-                <img src="../img/prueba.jpg" class="card-img-top" alt="..." />
-            </div>
-            <div class="col-md-1"></div>
-            <div class="form-floating col-md-7">
-                <h4>Descripción del producto</h4>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 400px">
-Marca: Puro-Puré 
-Color: Blanco
-                                        
-Es un modelo bastante versátil para casas y departamentos, tiene terminaciones muy finas y de larga duración.
-                    
-                </textarea>
-                
-                
-              </div>
-            
-            <div class="mb-3 col-md-6">
-            <label for="formFile" class="form-label">Cambiar imagen</label>
-            <input class="form-control" type="file" id="formFile" >
-            </div>
-
-            
-			  
-                
-				<div class="col-md-3">
-                    <label for="inputState" class="form-label">Modificar Categoria</label>
-                    <select id="inputState" class="form-select">
-                    <option selected>Seleccionar...</option>
-                    <option value="1">Muebles</option>
-					<option value="2">Libreros</option>
-					<option value="3">Cocina</option>
-                    </select>
-                    
-                  </div>
-				
-		
-              
-            
-            
-          </form>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <label class="form-label">Precio</label>
-                <input type="number" class="form-control" placeholder="40">
-                
-              </div>
-              
-        </div>
-            <div class="col-12 mt-2" >
-                <button type="submit" class="btn btn-primary">Modificar</button>
-                <a href="admin.html"><button type="button" class="btn btn-danger">Deshacer</button></a>
-              </div>
-        
-		<br>
-       <!--FOOTER-->
+		<div class="container">
+			<h3 class="text-center">Modificar producto</h3>
+			<hr />
+			<form class="row g-3" id="form_modprod">
+				<div class="col-md-6">
+					<label class="form-label">Nombre del producto</label>
+					<input type="text" class="form-control" id="nombre" required />
+				</div>
+				<div class="col-md-6">
+					<label class="form-label">Precio</label>
+					<input type="number" class="form-control" id="precio" required />
+				</div>
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Agregar imagen</label>
+					<input class="form-control" type="file" id="formFile" required />
+				</div>
+				<div class="col-md-12">
+					<select class="form-select" id="inputGroupSelect02">
+						<option selected>Escoge La Categoria</option>
+						<option value="1">Cocina</option>
+						<option value="2">Muebles</option>
+						<option value="3">Libreros</option>
+					</select>
+				</div>
+				<label for="floatingTextarea2">Descripcion del producto</label>
+				<textarea
+					class="form-control"
+					placeholder="Leave a comment here"
+					style="height: 100px"
+					id="desc_prod"
+					required
+				></textarea>
+				<div class="col-12">
+					<button type="submit" class="btn btn-dark">Agregar</button>
+					<a href="admin.html"
+						><button type="button" class="btn btn-dark">Deshacer</button></a
+					>
+				</div>
+				<p id="warnings" class="text-center"></p>
+			</form>
+		</div>
+		<br />
+		<!--FOOTER-->
 		<footer class="bg-dark text-white py-4">
 			<div class="container">
 				<nav class="row">
@@ -277,8 +251,7 @@ Es un modelo bastante versátil para casas y departamentos, tiene terminaciones 
 			src="https://kit.fontawesome.com/35113f2a50.js"
 			crossorigin="anonymous"
 		></script>
-	</body>
-</html>
-
+		<!--NATIVO-->
+		<script src="../js/validaciones.js"></script>
 	</body>
 </html>

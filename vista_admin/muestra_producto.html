@@ -11,9 +11,8 @@
 			href="../css/bootstrap.min.css"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
-
 	<body>
 		<!--BARRA NAV-->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -112,74 +111,38 @@
 		</nav>
 		<!--FIN BARRA NAV-->
 
-		<!--PERFIL USUARIO-->
 		<div class="container">
-			<form action="">
-				<div class="row">
-					<div class="col-md-6 col-sm-12 mt-3 mb-3">
-						<h5 class="text-center">Perfil Miguel Dog</h5>
-						<img
-							src="../img/Usuarios/Kulerios.png"
-							class="img-thumbnail imagen"
-							alt="..."
-						/>
-					</div>
-					<div class="col-md-6 col-sm-12 mt-3 mb-3">
-						<div class="row px-3">
-							<!--titulo-->
-							<h5>Nombre Completo</h5>
-							<!--texto deshabilitado-->
+			<div class="row">
+				<div class="col-md-6 col-sm-12 mt-3 mb-3">
+					<img src="../img/cocina.jpg" class="img-thumbnail" alt="..." />
+				</div>
+				<div class="col-md-6 col-sm-12 mt-3 mb-3">
+					<div class="row px-3">
+						<h3>Cocina blanca</h3>
+						<h5 class="titulo-producto">$5</h5>
+						<h5>Descripcion</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+							quibusdam, officiis eum sit, velit dolore voluptas, quae soluta
+							totam itaque cum tenetur id libero dolorem consequatur culpa
+							impedit beatae quia.
+						</p>
+						<h5 class="titulo-producto">5 Disponibles</h5>
+						<b>Seleccionar Cantidad</b>
+						<div class="form-outline">
 							<input
-								type="text"
-								class="form-control mt-1 mb-2"
-								name="nombre"
-								placeholder="Miguel Dog"
-								id="nombre_edit"
+								id="form1"
+								min="0"
+								name="Cantidad"
+								value="1"
+								type="number"
+								class="form-control mb-3"
 							/>
-
-							<!--titulo-->
-							<h5>Correo Electronico</h5>
-							<!--texto deshabilitado-->
-							<input
-								type="email"
-								class="form-control mt-1 mb-2"
-								name="correo"
-								placeholder="RivenLover@gmail.com"
-								id="email_edit"
-							/>
-
-							<!--titulo-->
-							<h5>Dirección</h5>
-							<input
-								type="text"
-								class="form-control mt-1 mb-2"
-								name="direccion completa"
-								placeholder="Los tres tristes tigres #5893, Region Metropolitana de Santiago, Las Condes"
-								id="dir_edit"
-							/>
-
-							<!--titulo-->
-							<h5>Contacto</h5>
-							<!--texto deshabilitado-->
-							<input
-								type="text"
-								class="form-control mt-1 mb-2"
-								name="contacto"
-								placeholder="+56 9 7216 7535"
-								id="num_edit"
-							/>
-
-							<button
-								type="submit"
-								class="btn btn-primary button"
-								id="conf_edit"
-							>
-								Confirmar cambios
-							</button>
 						</div>
+						<a href="" class="btn btn-dark">Agregar al Carro</a>
 					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 
 		<!--FOOTER-->
@@ -258,6 +221,7 @@
 				</nav>
 			</div>
 		</footer>
+
 		<!--SEPARATE-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -274,6 +238,6 @@
 			crossorigin="anonymous"
 		></script>
 		<!--NATIVO-->
-		<script src="js/scripts.js"></script>
+		<script src="../js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
