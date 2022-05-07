@@ -1,9 +1,11 @@
 $(document).ready(function () {
+
 	/* Validaciones registro*/
 	$('#form-reg').submit(function (e) {
 		e.preventDefault();
 		var nombre = $('#nombre_reg').val();
 		var clave = $('#pass_reg').val();
+		var clave2 = $('#pass_reg2').val();
 		var dir = $('#dir_reg').val();
 		var com = $('#comuna').val();
 		var celu = $('#celular').val();
@@ -13,36 +15,100 @@ $(document).ready(function () {
 		let regexEmail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,4})+$/;
 		let entrar = false;
 
-		if (nombre.trim().length < 4 || nombre.trim().length > 25) {
-			mensaje += 'El nombre no es valido <br>';
+		//VALIDACIONES NOMBRE
+		if (nombre.trim().length < 3 || nombre.trim().length > 25) {
+			mensaje += 'El nombre no es valido. <br>';
 			entrar = true;
 		}
 
+		if(/[0-9]/.test(nombre)){
+            mensaje += "El nombre no puede tener digitos. <br>"
+            entrar = true;
+        }
+
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(nombre.charAt(0) === (nombre.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "El nombre debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
+		}
+		//FIN VALIDACIONES NOMBRE
+
+		//-----------------------//
+
+		//VALIDACIONES CLAVE
 		if (clave.trim().length < 6) {
-			mensaje += 'La clave debe tener un largo minimo de 6 <br>';
+			mensaje += 'La clave debe tener un largo minimo de 6. <br>';
 			entrar = true;
 		}
 
+		if (clave != clave2) {
+            mensaje += "Las claves no coinciden. <br>"
+            entrar = true;
+        }
+
+		if(!/[A-Z]/.test(clave)){
+            mensaje += "La clave no contiene una mayuscula. <br>"
+            entrar = true;
+        }
+
+		if(!/[0-9]/.test(clave)){
+            mensaje += "La clave no contiene un digito. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES CLAVE
+
+		//-----------------------//
+
+		//VALIDACIONES EMAIL
 		if (!regexEmail.test(correo)) {
-			mensaje += 'El email no es valido <br>';
+			mensaje += 'El email no es valido. <br>';
 			entrar = true;
 		}
+		//FIN VALIDACIONES EMAIL
 
+		//-----------------------//
+
+		//VALIDACIONES DIRECCION
 		if (dir.trim().length < 8 || dir.trim().length > 30) {
-			mensaje += 'El pasaje debe tener un largo minimo de 8 y maximo de 30<br>';
+			mensaje += 'El pasaje debe tener un largo minimo de 8 y maximo de 30.<br>';
 			entrar = true;
 		}
 
+		if(!/[a-z]/.test(dir) && (!/[A-Z]/.test(dir))){
+            mensaje += "La direccion no contiene caracteres. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES DIRECCION
+
+		//-----------------------//
+
+		//VALIDACIONES COMUNA
 		if (com.trim().length <= 5 || com.trim().length > 20) {
-			mensaje += 'La comuna debe tener un largo minimo de 5 y maximo de 20<br>';
+			mensaje += 'La comuna debe tener un largo minimo de 5 y maximo de 20.<br>';
 			entrar = true;
 		}
+		if(!/[a-z]/.test(com) && (!/[A-Z]/.test(com))){
+            mensaje += "La comuna no contiene caracteres. <br>"
+            entrar = true;
+        }
+		if(/[0-9]/.test(com)){
+            mensaje += "La comuna no puede tener digitos. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES COMUNA
 
+		//-----------------------//
+
+		//VALIDACIONES CONTACTO
 		if (celu.trim().length != 9) {
-			mensaje += 'El celular debe tener un largo de 9 <br>';
+			mensaje += 'El celular debe tener un largo de 9. <br>';
 			entrar = true;
 		}
+		//FIN VALIDACIONES CELULAR
 
+		//-----------------------//
 		if (entrar) {
 			$('#warnings').html(mensaje);
 		} else {
@@ -61,22 +127,45 @@ $(document).ready(function () {
 		let regexEmail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,4})+$/;
 		let entrar = false;
 
-		if (nombre.trim().length < 4 || nombre.trim().length > 25) {
-			mensaje += 'El nombre no es valido <br>';
+		//VALIDACIONES NOMBRE
+		if (nombre.trim().length < 3 || nombre.trim().length > 25) {
+			mensaje += 'El nombre no es valido. <br>';
 			entrar = true;
 		}
 
+		if(/[0-9]/.test(nombre)){
+            mensaje += "El nombre no puede tener digitos. <br>"
+            entrar = true;
+        }
+
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(nombre.charAt(0) === (nombre.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "El nombre debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
+		}
+		//FIN VALIDACIONES NOMBRE
+
+		//-----------------------//
+
+		//VALIDACIONES EMAIL
 		if (!regexEmail.test(correo)) {
-			mensaje += 'El email no es valido <br>';
+			mensaje += 'El email no es valido. <br>';
 			entrar = true;
 		}
+		//FIN VALIDACIONES EMAIL
 
+		//-----------------------//
+
+		//VALIDACIONES ASUNTO
 		if (asunto.trim().length < 10 || asunto.trim().length > 100) {
-			mensaje +=
-				'El mensaje debe tener un largo minimo de 10 y maximo de 100<br>';
+			mensaje += 'El mensaje debe tener un largo minimo de 10 y maximo de 100 caracteres.<br>';
 			entrar = true;
 		}
+		//FIN VALIDACIONES ASUNTO
 
+		//-----------------------//
 		if (entrar) {
 			$('#warnings').html(mensaje);
 		} else {
@@ -94,25 +183,50 @@ $(document).ready(function () {
 
 		let entrar = false;
 
+		//VALIDACIONES DIRECCION
 		if (dir.trim().length < 8 || dir.trim().length > 30) {
-			mensaje += 'El pasaje debe tener un largo minimo de 8 y maximo de 30<br>';
+			mensaje += 'El pasaje debe tener un largo minimo de 8 y maximo de 30.<br>';
 			entrar = true;
 		}
 
+		if(!/[a-z]/.test(dir) && (!/[A-Z]/.test(dir))){
+            mensaje += "la direccion no contiene caracteres. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES DIRECCION
+
+		//-----------------------//
+
+		//VALIDACIONES COMUNA
 		if (com.trim().length <= 5 || com.trim().length > 20) {
-			mensaje += 'La comuna debe tener un largo minimo de 5 y maximo de 20<br>';
+			mensaje += 'La comuna debe tener un largo minimo de 5 y maximo de 20.<br>';
 			entrar = true;
 		}
+		if(!/[a-z]/.test(com) && (!/[A-Z]/.test(com))){
+            mensaje += "La comuna no contiene caracteres. <br>"
+            entrar = true;
+        }
+		if(/[0-9]/.test(com)){
+            mensaje += "La comuna no puede tener digitos. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES COMUNA
 
+		//-----------------------//
+
+		//VALIDACIONES CONTACTO
 		if (celu.trim().length != 9) {
-			mensaje += 'El celular debe tener un largo de 9 <br>';
+			mensaje += 'El celular debe tener un largo de 9. <br>';
 			entrar = true;
 		}
+		//FIN VALIDACIONES CELULAR
+
+		//-----------------------//
 
 		if (entrar) {
 			$('#warnings').html(mensaje);
 		} else {
-			$('#warnings').html('Cambios aplicados correctamente');
+			$('#warnings').html('Cambios aplicados correctamente.');
 		}
 	});
 
@@ -127,15 +241,29 @@ $(document).ready(function () {
 
 		let entrar = false;
 
-		if (clave !== clave2) {
-			mensaje += 'Las claves no coinciden<br>';
+		//VALIDACIONES CLAVE
+		if (clave.trim().length < 6) {
+			mensaje += 'La clave debe tener un largo minimo de 6. <br>';
 			entrar = true;
 		}
 
-		if (clave.length < 6) {
-			mensaje += 'La clave debe tener un largo minimo de 6<br>';
-			entrar = true;
-		}
+		if (clave != clave2) {
+            mensaje += "Las claves no coinciden. <br>"
+            entrar = true;
+        }
+
+		if(!/[A-Z]/.test(clave)){
+            mensaje += "La clave no contiene una mayuscula. <br>"
+            entrar = true;
+        }
+
+		if(!/[0-9]/.test(clave)){
+            mensaje += "La clave no contiene un digito. <br>"
+            entrar = true;
+        }
+		//FIN VALIDACIONES CLAVE
+
+		//-----------------------//
 
 		if (entrar) {
 			$('#warnings').html(mensaje);
@@ -150,26 +278,59 @@ $(document).ready(function () {
 		var nombre = $('#nombre_prod').val();
 		var precio = $('#precio_prod').val();
 		var descripcion = $('#desc_prod').val();
-
+		var categoria = $('#categoria').val();
 		var mensaje = '';
 
 		let entrar = false;
 
-		if (nombre.trim().length < 4 || nombre.trim().length > 20) {
-			mensaje +=
-				'El nombre debe tener un largo minimo de 4 y maximo de 20 <br>';
+		//VALIDACIONES NOMBRE
+		if (nombre.trim().length < 4 || nombre.trim().length > 25) {
+			mensaje += 'El nombre del producto debe tener 4 caracteres como mínimo y máximo 25. <br>';
 			entrar = true;
 		}
 
+		if(/[0-9]/.test(nombre)){
+            mensaje += "El nombre del producto no puede tener digitos. <br>"
+            entrar = true;
+        }
+
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(nombre.charAt(0) === (nombre.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "El nombre del producto debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
+		}
+		//FIN VALIDACIONES NOMBRE
+
+		//-----------------------//
+
+		//VALIDACIONES PRECIO
 		if (precio <= 0) {
-			mensaje += 'El precio debe ser mayor a 0<br>';
+			mensaje += 'El precio debe ser mayor a 0.<br>';
+			entrar = true;
+		}
+		//FIN VALIDACIONES PRECIO
+
+		//-----------------------//
+		
+		//VALIDACIONES DESCRIPCION
+		if (descripcion.length < 10 || descripcion.length > 120) {
+			mensaje += 'La descripción debe ser mayor a 10 y menor a 120 caracteres.<br>';
 			entrar = true;
 		}
 
-		if (descripcion.length < 10 || descripcion.length > 120) {
-			mensaje += 'La descripcion debe ser mayor a 10 y menor a 120 letras <br>';
-			entrar = true;
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(descripcion.charAt(0) === (descripcion.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "La descripción del producto debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
 		}
+		//FIN VALIDACIONES DESCRIPCION
+
+		//-----------------------//
+	
 
 		if (entrar) {
 			$('#warnings').html(mensaje);
@@ -190,21 +351,53 @@ $(document).ready(function () {
 
 		let entrar = false;
 
-		if (nombre.trim().length < 4 || nombre.trim().length > 20) {
-			mensaje +=
-				'El nombre debe tener un largo minimo de 4 y maximo de 20 <br>';
+		//VALIDACIONES NOMBRE
+		if (nombre.trim().length < 4 || nombre.trim().length > 25) {
+			mensaje += 'El nombre del producto debe tener 4 caracteres como mínimo y máximo 25. <br>';
 			entrar = true;
 		}
 
+		if(/[0-9]/.test(nombre)){
+            mensaje += "El nombre del producto no puede tener digitos. <br>"
+            entrar = true;
+        }
+
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(nombre.charAt(0) === (nombre.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "El nombre del producto debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
+		}
+		//FIN VALIDACIONES NOMBRE
+
+		//-----------------------//
+
+		//VALIDACIONES PRECIO
 		if (precio <= 0) {
-			mensaje += 'El precio debe ser mayor a 0<br>';
+			mensaje += 'El precio debe ser mayor a 0.<br>';
+			entrar = true;
+		}
+		//FIN VALIDACIONES PRECIO
+
+		//-----------------------//
+
+		//VALIDACIONES DESCRIPCION
+		if (descripcion.length < 10 || descripcion.length > 120) {
+			mensaje += 'La descripción debe ser mayor a 10 y menor a 120 caracteres.<br>';
 			entrar = true;
 		}
 
-		if (descripcion.length < 10 || descripcion.length > 120) {
-			mensaje += 'La descripcion debe ser mayor a 10 y menor a 120 letras <br>';
-			entrar = true;
+		//NO ESTOY MUY SEGURO DE ESTA VALIDACION PERO POR LO QUE EH PROBADO SIRVE
+		if(descripcion.charAt(0) === (descripcion.charAt(0).toUpperCase())){
+
+		}else{
+			mensaje += "La descripción del producto debe tener la primera letra Mayuscula. <br>"
+            entrar = true;
 		}
+		//FIN VALIDACIONES DESCRIPCION
+
+		//-----------------------//
 
 		if (entrar) {
 			$('#warnings').html(mensaje);
